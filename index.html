@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ilbccchess - Federation Rating List &amp; Standings</title>
+  <style>
+    /* Classic Chess-Results / FIDE Utilitarian Federation Styling */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #111111;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 12px 16px;
+      line-height: 1.4;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* Header Bar */
+    .fed-header {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .fed-title-block h1 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #003366;
+      margin: 0 0 2px 0;
+      letter-spacing: -0.2px;
+    }
+
+    .fed-subtitle {
+      font-size: 11px;
+      color: #444444;
+      margin: 0;
+    }
+
+    .status-notice {
+      background-color: #f2f4f7;
+      border: 1px solid #b8c4d4;
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: bold;
+      color: #003366;
+    }
+
+    /* Info Strip */
+    .info-bar {
+      background-color: #f7f7f7;
+      border: 1px solid #cccccc;
+      padding: 6px 8px;
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+
+    /* Main Standings Table */
+    table.standings {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #999999;
+      font-size: 12px;
+    }
+
+    table.standings th {
+      background-color: #003366;
+      color: #ffffff;
+      font-weight: bold;
+      text-align: left;
+      padding: 5px 7px;
+      border: 1px solid #002244;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    table.standings td {
+      padding: 4px 7px;
+      border: 1px solid #cccccc;
+      vertical-align: middle;
+    }
+
+    table.standings tr:nth-child(even) {
+      background-color: #f5f7fa;
+    }
+
+    table.standings tr:hover {
+      background-color: #eaf0f8;
+    }
+
+    .col-rk {
+      width: 42px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .col-fed {
+      width: 48px;
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+    }
+
+    .col-rtg {
+      width: 75px;
+      text-align: right;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+    }
+
+    .col-games {
+      width: 55px;
+      text-align: center;
+      color: #444444;
+    }
+
+    /* Inline Title Styling (No Extra Box) */
+    .fed-title {
+      font-size: 11px;
+      font-weight: bold;
+      color: #8b0000;
+      margin-right: 5px;
+    }
+
+    .player-name {
+      font-weight: bold;
+      color: #002b55;
+    }
+
+    /* Footer */
+    .fed-footer {
+      margin-top: 14px;
+      padding-top: 8px;
+      border-top: 1px solid #cccccc;
+      font-size: 11px;
+      color: #555555;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <div class="fed-header">
+      <div class="fed-title-block">
+        <h1>ilbccchess &mdash; Official Federation Rating List</h1>
+        <p class="fed-subtitle">Standard Classical Rating Ledger &bull; Top 16 Federation Standings</p>
+      </div>
+      <div class="status-notice">
+        ONLINE CHESS COMING SOON
+      </div>
+    </div>
+
+    <!-- INFO STRIP -->
+    <div class="info-bar">
+      <strong>List Period:</strong> November 2026 &nbsp;|&nbsp;
+      <strong>Rating System:</strong> Classical Elo &nbsp;|&nbsp;
+      <strong>Ranked Spots:</strong> 16
+    </div>
+
+    <!-- STANDINGS TABLE (16 RANK SPOTS) -->
+    <table class="standings">
+      <thead>
+        <tr>
+          <th class="col-rk">Rk.</th>
+          <th>Title &amp; Name</th>
+          <th class="col-fed">FED</th>
+          <th class="col-rtg">Elo</th>
+          <th class="col-games">Gms</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- RANK 1 -->
+        <tr>
+          <td class="col-rk">1</td>
+          <td><span class="fed-title">(GP)(1st)</span><span class="player-name">Thant Sin Aung</span></td>
+          <td class="col-fed">MYA</td>
+          <td class="col-rtg">500</td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 2 -->
+        <tr>
+          <td class="col-rk">2</td>
+          <td><span class="fed-title">(host)(GP)</span><span class="player-name">Kyaw Zay ya</span></td>
+          <td class="col-fed">MYA</td>
+          <td class="col-rtg">400</td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 3 -->
+        <tr>
+          <td class="col-rk">3</td>
+          <td><span class="fed-title">(host)(GP)</span><span class="player-name">Zwe Wint hmann</span></td>
+          <td class="col-fed">MYA</td>
+          <td class="col-rtg">399</td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 4 -->
+        <tr>
+          <td class="col-rk">4</td>
+          <td><span class="fed-title">----------</span><span class="player-name">Kaung Swam Yee</span></td>
+          <td class="col-fed">MYA</td>
+          <td class="col-rtg">280</td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 5 -->
+        <tr>
+          <td class="col-rk">5</td>
+          <td><span class="fed-title">----------</span><span class="player-name">Khant Phone Zaw</span></td>
+          <td class="col-fed">MYA</td>
+          <td class="col-rtg">250</td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 6 -->
+        <tr>
+          <td class="col-rk">6</td>
+          <td><span class="fed-title"></span><span class="player-name">Caw Kya Ywee</span></td>
+          <td class="col-fed">250</td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 7 -->
+        <tr>
+          <td class="col-rk">7</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 8 -->
+        <tr>
+          <td class="col-rk">8</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 9 -->
+        <tr>
+          <td class="col-rk">9</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 10 -->
+        <tr>
+          <td class="col-rk">10</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 11 -->
+        <tr>
+          <td class="col-rk">11</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 12 -->
+        <tr>
+          <td class="col-rk">12</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 13 -->
+        <tr>
+          <td class="col-rk">13</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 14 -->
+        <tr>
+          <td class="col-rk">14</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 15 -->
+        <tr>
+          <td class="col-rk">15</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+        <!-- RANK 16 -->
+        <tr>
+          <td class="col-rk">16</td>
+          <td><span class="fed-title"></span><span class="player-name"></span></td>
+          <td class="col-fed"></td>
+          <td class="col-rtg"></td>
+          <td class="col-games"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- FOOTER -->
+    <div class="fed-footer">
+      <div>ilbccchess Federation Rating System &bull; Online Chess Coming Soon</div>
+      <div>&copy; Copyright by <strong>PGG Production Studio</strong>. All rights reserved.</div>
+    </div>
+  </div>
+</body>
+</html>
